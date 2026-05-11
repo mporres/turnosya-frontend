@@ -1,0 +1,305 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, sans-serif;
+  background: #f5f7fa;
+  color: #1f2937;
+  line-height: 1.5;
+}
+
+a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 24px 20px 80px;
+}
+
+.navbar {
+  background: #1f2937;
+  color: #fff;
+  padding: 14px 20px;
+}
+
+.navbar-inner {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 18px;
+}
+
+.navbar-brand {
+  font-weight: 700;
+  font-size: 18px;
+  color: #fff;
+}
+
+.navbar a {
+  color: #d1d5db;
+  font-size: 15px;
+}
+
+.navbar a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 28px;
+  margin: 0 0 12px;
+}
+
+h2 {
+  font-size: 20px;
+  margin: 24px 0 12px;
+}
+
+p.lead {
+  color: #4b5563;
+  margin: 0 0 24px;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 18px 20px;
+  margin-bottom: 16px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+}
+
+.grid {
+  display: grid;
+  gap: 16px;
+}
+
+.grid.cols-2 {
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 720px) {
+  .grid.cols-2 {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+label {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #374151;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 9px 11px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font: inherit;
+  background: #fff;
+  margin-bottom: 12px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
+button {
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  padding: 9px 16px;
+  border-radius: 6px;
+  font: inherit;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
+
+button.secondary {
+  background: #e5e7eb;
+  color: #1f2937;
+}
+
+button.secondary:hover {
+  background: #d1d5db;
+}
+
+button.danger {
+  background: #dc2626;
+}
+
+button.danger:hover {
+  background: #b91c1c;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.row-actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #e5e7eb;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 10px 12px;
+  border-bottom: 1px solid #e5e7eb;
+  font-size: 14px;
+  vertical-align: top;
+}
+
+th {
+  background: #f3f4f6;
+  font-weight: 600;
+  color: #374151;
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+
+.alert {
+  padding: 10px 14px;
+  border-radius: 6px;
+  margin-bottom: 16px;
+  font-size: 14px;
+}
+
+.alert-error {
+  background: #fee2e2;
+  color: #991b1b;
+  border: 1px solid #fecaca;
+}
+
+.alert-success {
+  background: #dcfce7;
+  color: #166534;
+  border: 1px solid #bbf7d0;
+}
+
+.alert-info {
+  background: #e0f2fe;
+  color: #075985;
+  border: 1px solid #bae6fd;
+}
+
+.muted {
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.badge-pendiente {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.badge-confirmado {
+  background: #dbeafe;
+  color: #1e40af;
+}
+
+.badge-cancelado {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.badge-finalizado {
+  background: #d1fae5;
+  color: #065f46;
+}
+
+.badge-prioridad-alta {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.badge-prioridad-media {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.badge-prioridad-baja {
+  background: #e0e7ff;
+  color: #3730a3;
+}
+
+.metric {
+  background: #fff;
+  padding: 16px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+}
+
+.metric h3 {
+  margin: 0 0 8px;
+  font-size: 16px;
+  color: #374151;
+}
+
+.metric ul {
+  margin: 0;
+  padding-left: 18px;
+}
+
+pre {
+  background: #1f2937;
+  color: #f9fafb;
+  padding: 14px;
+  border-radius: 6px;
+  font-size: 13px;
+  overflow-x: auto;
+  white-space: pre-wrap;
+}
